@@ -1,6 +1,9 @@
 - name: Hello World Sample
   hosts: all
   tasks:
+    - pause:
+        seconds: 40
+        
     - name: Hello Message
       debug:
         msg: "Hello World!"
